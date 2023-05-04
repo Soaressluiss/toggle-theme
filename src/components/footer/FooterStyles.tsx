@@ -7,7 +7,11 @@ export const FooterContainer = styled.footer`
     justify-content: center;
     gap: 1.3rem;
     background-color: ${({ theme }) => theme.colorPrimary};
-    padding: 1rem 0;
+    padding: 2rem 0;
+    text-align: center;
+    @media screen and (max-width: 430px) {
+        padding: 2rem;
+    }
     > p {
         color: ${({ theme }) => theme.color};
         font-weight: bold;
@@ -22,6 +26,10 @@ export const DevContainer = styled.section`
     flex-direction: row;
     justify-content: center;
     gap: 1.3rem;
+    @media screen and (max-width: 430px) {
+        flex-direction: column;
+        align-items: center;
+    }
     > h5 {
         color: ${({ theme }) => theme.color};
         font-weight: bold;
@@ -32,8 +40,14 @@ export const DevContainer = styled.section`
     > ul {
         display: flex;
         gap: 1rem;
+        @media screen and (max-width: 430px) {
+            flex-direction: row;
+        }
         > li {
             font-size: 1.5rem;
+            @media screen and (max-width: 430px) {
+                font-size: 2rem;
+            }
         }
     }
 `;

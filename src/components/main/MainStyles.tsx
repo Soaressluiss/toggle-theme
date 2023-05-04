@@ -21,6 +21,13 @@ export const WrapperImg = styled.div`
     justify-content: center;
     gap: 3rem;
     border-radius: 20px;
+    @media screen and (max-width: 835px) {
+        width: 80%;
+    }
+    @media screen and (max-width: 430px) {
+        height: 60%;
+        padding: 1rem;
+    }
     h4 {
         color: ${({ theme }) => theme.color};
         font-size: 1.7rem;
@@ -30,5 +37,8 @@ export const WrapperImg = styled.div`
     }
     img {
         width: 25%;
+        @media screen and (max-width: 430px) {
+            width: 50%;
+        }
     }
 `;
