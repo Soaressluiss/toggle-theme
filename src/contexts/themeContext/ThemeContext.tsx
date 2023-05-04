@@ -10,12 +10,16 @@ interface ItoggleProps {
         colorPrimary: string;
         colorSecondary: string;
         color: string;
+        containerIcon: string;
+        colorSpan: string;
     };
     setToggle: React.Dispatch<
         React.SetStateAction<{
             colorPrimary: string;
             colorSecondary: string;
             color: string;
+            containerIcon: string;
+            colorSpan: string;
         }>
     >;
 }
