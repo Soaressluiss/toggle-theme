@@ -1,4 +1,8 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const Pointer = keyframes`
+    to { transform: scale(.9) };
+`;
 
 export const ContainerToggle = styled.span`
     width: 40px;
@@ -11,4 +15,7 @@ export const ContainerToggle = styled.span`
     background-color: ${({ theme }) => theme.containerIcon};
     border-radius: 20px;
     cursor: pointer;
+    &:hover {
+        animation: ${Pointer} 0.4s ease forwards;
+    }
 `;

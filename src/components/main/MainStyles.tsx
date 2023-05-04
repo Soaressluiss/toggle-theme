@@ -1,5 +1,12 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
+const UpToDown = keyframes`
+    from {
+        transform: translateY(-400px);
+    }to {
+        transform: translateY(0px);
+    }
+`;
 export const ContainerMain = styled.main`
     width: 100%;
     height: 100vh;
@@ -21,6 +28,7 @@ export const WrapperImg = styled.div`
     justify-content: center;
     gap: 3rem;
     border-radius: 20px;
+    animation: ${UpToDown} 0.4s ease-in-out;
     @media screen and (max-width: 835px) {
         width: 80%;
     }
