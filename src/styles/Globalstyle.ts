@@ -8,4 +8,7 @@ export const Globalstyles = createGlobalStyle`
         list-style: none;
         text-decoration: none;
     }
+    img {
+        width: 50px;
+    }
 `;

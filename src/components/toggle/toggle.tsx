@@ -13,7 +13,10 @@ export const Toggle = (): JSX.Element => {
         );
     };
     return (
-        <ContainerToggle onClick={() => handleTheme()}>
+        <ContainerToggle
+            onClick={() => handleTheme()}
+            title="mude o tema a seu agrado"
+        >
             {toggle == Theme.themeLight ? (
                 <BsFillSunFill />
             ) : (

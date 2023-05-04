@@ -12,4 +12,5 @@ export const MyHeader = styled.header`
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         color: ${({ theme }) => theme.color};
     }
+    
 `;
