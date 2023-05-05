@@ -1,6 +1,6 @@
 <div>
 
-![header](./src/assets/Github%20ReadMe%20files/Banner.png)
+![header](./src/assets/readme%20files/banner.svg)
 
 </div>
 <div align='center'>
@@ -74,7 +74,7 @@ npm run dev
 
 ## 📽 Gif demostrativo:
 
-![animation](./src/assets/Github%20ReadMe%20files/todoGif.gif)
+![animation](./src/assets/readme%20files/ToggleThemeGif.gif)
 
 ## ♻️ Como contribuir:
 
